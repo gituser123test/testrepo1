@@ -12,6 +12,7 @@
 		<title>Database Matrics</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="signin.css" rel="stylesheet">
+		<link href="testnav.css" rel="stylesheet">
 	</head>
 
   <body>
@@ -22,6 +23,7 @@
 		<div class="row">
 			<div class="col-lg-4">
 				<iframe src="http://centos1:5601/app/kibana#/visualize/create?embed=true&type=table&indexPattern=testdb&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-4h,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(field:price),schema:metric,type:sum),(id:'2',params:(field:article,order:asc,orderBy:'1',size:10),schema:bucket,type:terms),(id:'3',params:(field:dealer,order:asc,orderBy:'1',size:10),schema:bucket,type:terms),(id:'4',params:(field:price,order:asc,orderBy:'1',size:10),schema:bucket,type:terms)),listeners:(),params:(perPage:10,showMeticsAtAllLevels:!f,showPartialRows:!f),title:'New%20Visualization',type:table))" height="350" width="500"></iframe>
+				<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
 			</div>
 		</div>
 		<div class="row">
