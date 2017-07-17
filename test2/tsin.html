@@ -1,7 +1,12 @@
 <html>
 <title>test page</title>
+<body><h1></h1>
 <img src="/image/ts_header.png" alt="TS header image" style="width:450px;height:95px;">
 <h2></h2>
 <img src="/image/ts_ofc.png" alt="TS header image" style="width:900px;height:400px;">
-<body><h1></h1></body>
+
+<iframe src="http://centos1:5601/app/kibana#/visualize/create?embed=true&type=table&indexPattern=testdb&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-4h,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(field:price),schema:metric,type:sum),(id:'2',params:(field:article,order:asc,orderBy:'1',size:10),schema:bucket,type:terms),(id:'3',params:(field:dealer,order:asc,orderBy:'1',size:10),schema:bucket,type:terms),(id:'4',params:(field:price,order:asc,orderBy:'1',size:10),schema:bucket,type:terms)),listeners:(),params:(perPage:10,showMeticsAtAllLevels:!f,showPartialRows:!f),title:'New%20Visualization',type:table))" height="600" width="800"></iframe>
+<iframe src="http://centos1:5601/app/kibana#/visualize/create?embed=true&type=pie&indexPattern=testdb&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-4h,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(field:dealer,order:desc,orderBy:'1',size:10),schema:segment,type:terms)),listeners:(),params:(addLegend:!t,addTooltip:!t,isDonut:!f,shareYAxis:!t),title:'New%20Visualization',type:pie))" height="600" width="800"></iframe>
+
+</body>
 </html>
