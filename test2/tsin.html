@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Test table details</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+	<style style="text/css">
+          body {
+             background-image: url("/image/ts_bg2.jpg");
+            background-position: 100% 100%;
+            background-repeat: no-repeat;
+		background-size: cover;
+          }
+        </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+<!--           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">to be edited..</span>
+            <span class="icon-bar">option1</span>
+            <span class="icon-bar">option2</span>
+            <span class="icon-bar">option3</span>
+          </button> -->
+          <a class="navbar-brand" href="#"></a>
+          <img src="/image/ts_header_2.png" alt="TS header image" style="width:250px;height:50px;">
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="">
+        <!-- <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> -->
+          <h2 class="page-header">Analysis & Reports</h2>
+
+          <div class="row">
+            <div class="">
+             <!-- <iframe src="http://centos1:5601/app/kibana#/visualize/create?embed=true&type=table&indexPattern=testdb&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-7d,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(field:price),schema:metric,type:sum),(id:'2',params:(field:article,order:asc,orderBy:'1',size:10),schema:bucket,type:terms),(id:'3',params:(field:dealer,order:asc,orderBy:'1',size:10),schema:bucket,type:terms),(id:'4',params:(field:price,order:asc,orderBy:'1',size:10),schema:bucket,type:terms)),listeners:(),params:(perPage:10,showMeticsAtAllLevels:!f,showPartialRows:!f),title:'New%20Visualization',type:table))" height="300" width="550"></iframe> -->
+             <!--  <iframe src="http://centos1:5601/app/kibana#/visualize/create?embed=true&type=area&indexPattern=metricbeat-*&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-15m,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(field:system.filesystem.free,order:desc,orderBy:'1',size:5),schema:segment,type:terms)),listeners:(),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,defaultYExtents:!f,interpolate:linear,mode:stacked,scale:linear,setYExtents:!f,shareYAxis:!t,smoothLines:!f,times:!(),yAxis:()),title:'New%20Visualization',type:area))" height="600" width="800"></iframe> -->
+             <!-- <iframe src="http://centos1:5601/app/kibana#/discover?_g=(refreshInterval:(display:'5%20seconds',pause:!f,section:1,value:5000),time:(from:now-15m,mode:quick,to:now))&_a=(columns:!(_source),index:'filebeat-*',interval:auto,query:(query_string:(analyze_wildcard:!t,query:'*')),sort:!('@timestamp',desc),uiState:(vis:(legendOpen:!t)))" height="400" width="650"></iframe> -->
+	     <!-- <iframe id="frame1" src="http://centos1:5601/app/kibana#/visualize/create?embed=true&type=histogram&indexPattern=filebeat-*&_g=(refreshInterval:(display:'5%20seconds',pause:!f,section:1,value:5000),time:(from:now-15m,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(field:'@timestamp',order:desc,orderBy:'1',size:10),schema:segment,type:terms)),listeners:(),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,defaultYExtents:!f,mode:stacked,scale:linear,setYExtents:!f,shareYAxis:!t,times:!(),yAxis:()),title:'New%20Visualization',type:histogram))" height="500" width="700"></iframe> -->
+	
+
+	<iframe src="http://cache2:5601/app/kibana#/visualize/edit/Hit_count_24Aug2017?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-7d,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(field:'@timestamp',order:desc,orderBy:'1',row:!f,size:5),schema:split,type:terms)),listeners:(),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,defaultYExtents:!f,mode:stacked,scale:linear,setYExtents:!f,shareYAxis:!t,times:!(),yAxis:()),title:Hit_count_24Aug2017,type:histogram))" height="600" width="800"></iframe>
+
+              <h4># of unique hits</h4>
+              <span class="text-muted">per websites</span>
+            </div>
+
+
+          <div class="row">
+            <div class="">
+             	<iframe src="http://cache2:5601/app/kibana#/visualize/edit/beat_host_count_24Aug2017?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-7d,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(field:beat.hostname,order:desc,orderBy:'1',size:5),schema:segment,type:terms)),listeners:(),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,defaultYExtents:!f,mode:stacked,scale:linear,setYExtents:!f,shareYAxis:!t,times:!(),yAxis:()),title:beat_host_count_24Aug2017,type:histogram))" height="600" width="800"></iframe>
+
+              <h4>Host Count</h4>
+              <span class="text-muted">from the requests</span>
+            </div>
+
+
+          <div class="row">
+            <div class="">
+             	<iframe src="http://cache2:5601/app/kibana#/visualize/edit/log_activity_24Aug2017?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-7d,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(field:source,order:desc,orderBy:'1',size:5),schema:segment,type:terms)),listeners:(),params:(addLegend:!t,addTooltip:!t,isDonut:!f,shareYAxis:!t),title:log_activity_24Aug2017,type:pie))" height="600" width="800"></iframe>
+              <h4>Log Activity</h4>
+              <span class="text-muted">From the slaves</span>
+            </div>
+
+
+
+          <div class="placeholders">
+            <!--<iframe src="http://centos1:5601/app/kibana#/visualize/create?embed=true&type=pie&indexPattern=testdb&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-7d,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(field:dealer,order:desc,orderBy:'1',size:10),schema:segment,type:terms)),listeners:(),params:(addLegend:!t,addTooltip:!t,isDonut:!f,shareYAxis:!t),title:'New%20Visualization',type:pie))" height="325" width="550"></iframe> -->
+              <h4></h4>
+              <span class="text-muted"></span>
+            </div>
+
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">
+			<img src="/image/ts_header_2.png" alt="TS header image" style="width:125px;height:30px;">
+		</div>
+	</nav>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script>
+	function f1()
+	{
+	var x=document.getElementById("frame1");
+	x.src=x.src+Math.floor(random()%100000);
+	}
+	setInterval(f1,10*1000);
+	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
