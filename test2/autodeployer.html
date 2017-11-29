@@ -41,10 +41,10 @@
 	<body>
 
 		<div class="container">
-			<h3>Welcome to the automated AEM Environment creator</h3>
-			<h4>Please select the required features to install and click proceed...</h4>
+			<h3>Automated AEM Environment creator</h3>
+			<h4>Select the required tools to install and click proceed...</h4>
 			
-			<form>
+			<form action="/scriptexec.php" method="post">
 				<div class="row">
 					<div class="form-group col-md-1">
 					</div>
@@ -58,10 +58,10 @@
 						<label for="java1">Name</label>
 						<select class="custom-select">
 						<option selected>Select</option>
-						<option value="1">aem1</option>
-						<option value="2">cache1</option>
-						<option value="3">cache2</option>
-						<option value="4">load1</option>
+						<option value="vm1">aem1</option>
+						<option value="vm2">cache1</option>
+						<option value="vm3">cache2</option>
+						<option value="vm4">load1</option>
 						</select>
 					</div>
 				</div>
@@ -78,9 +78,9 @@
 						<label for="java1">Version</label>
 						<select class="custom-select">
 						<option selected>Select</option>
-						<option value="1">Version 7.X</option>
-						<option value="2">Version 8.X</option>
-						<option value="3">Version 9.X</option>
+						<option value="java1">Version 7.X</option>
+						<option value="java2">Version 8.X</option>
+						<option value="java3">Version 9.X</option>
 						</select>
 					</div>
 				</div>
@@ -97,17 +97,17 @@
 						<label for="java1">Version</label>
 						<select class="custom-select">
 						<option selected>Select</option>
-						<option value="1">Version 6.1</option>
-						<option value="2">Version 6.2</option>
-						<option value="3">Version 6.3</option>
+						<option value="aem1">Version 6.1</option>
+						<option value="aem2">Version 6.2</option>
+						<option value="aem3">Version 6.3</option>
 						</select>
 					</div>
 					<div class="form-group col-md-7">
 						<label for="java1">Environment</label>
 						<select class="custom-select">
 						<option selected>Select</option>
-						<option value="1">Author</option>
-						<option value="2">Publisher</option>
+						<option value="env1">Author</option>
+						<option value="env2">Publisher</option>
 						</select>
 					</div>
 				</div>
@@ -121,7 +121,8 @@
 						<a class="btn btn-primary" href="http://test2.com/" role="button">Cancel</a>
 					</div>
 					<div class="form-group col-md-1">
-						<button type="submit" class="btn btn-default btn-success" value="Open Script" action="/scriptexec.php" method="post">Submit</button>
+						<button type="submit" class="btn btn-default btn-success" value="Open Script">Submit</button>
+						<?php echo Installation in progress...; ?>
 					</div>
 				</div>
 			</form>
