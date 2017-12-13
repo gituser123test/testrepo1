@@ -44,7 +44,7 @@
 			<h3>Automated AEM Environment creator</h3>
 			<h4>Select the required tools to install and click proceed...</h4>
 			
-			<form action="/scriptexec.php" method="post">
+			<form action="#" method="post">
 				<div class="row">
 					<div class="form-group col-md-1">
 					</div>
@@ -121,13 +121,22 @@
 						<a class="btn btn-primary" href="http://test2.com/" role="button">Cancel</a>
 					</div>
 					<div class="form-group col-md-1">
-						<button type="submit" class="btn btn-default btn-success" value="Submit">Submit</button>
+						<button type="submit" class="btn btn-default btn-success" value="Submit" onclick="execute();">Submit</button>
 						
 					</div>
 				</div>
 			</form>
 			
 		</div>
+		
+		<script type="text/javascript"> 
+			function execute() { 
+    			$.get("scriptexec.php"); 
+    			return false; 
+			} 
+		</script>
+		
+		<script src="js/bootstrap.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
 		<!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
