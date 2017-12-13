@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+		<title> Test Sign Up form</title>
+		<link href="css/min.css" rel="stylesheet">
+		<link href="css/signin.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h3>Automated SQL VM Setup</h3>
+			<h4>Select the required tools to install and click proceed...</h4>
+			<form>
+				<div class="row">
+					<div class="form-group col-md-1">
+					</div>
+					<div class="form-group col-md-2">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" value="java">
+							VM
+						</label>
+					</div>
+					<div class="form-group col-md-9">
+						<label for="vm1">Name</label>
+						<select class="custom-select">
+						<option selected>Select</option>
+						<option value="1">enter your vm here</option>
+						
+						</select>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group col-md-1">
+					</div>
+					<div class="form-group col-md-2">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" value="java">
+							Backup configuration
+						</label>
+					</div>
+					<div class="form-group col-md-9">
+						<label for="backup1">Version</label>
+						<select class="custom-select">
+						<option selected>Select</option>
+						<option value="1">Policy 5</option>
+						<option value="2">Policy 2</option>
+						<option value="3">Policy 3</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group col-md-1">
+					</div>
+					<div class="form-group col-md-2">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" value="java">
+							Maintenance plan
+						</label>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="maintainnance1">Version</label>
+						<select class="custom-select">
+						<option selected>Select</option>
+						<option value="1">Plan 1</option>
+						<option value="2">Plan 2</option>
+						<option value="3">Plan 3</option>
+						</select>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="form-group col-md-4">
+					</div>
+					<div class="form-group col-md-1">
+						<input class="btn btn-primary" type="reset" value="Reset">
+					</div>
+					<div class="form-group col-md-1">
+						<a class="btn btn-primary" href="" role="button">Cancel</a>
+					</div>
+					<div class="form-group col-md-1">
+						<form action="" method="post">
+							<button type="submit" class="btn btn-default btn-success" value="Submit" onclick="execute();>Submit</button>
+						</form>
+					</div>
+				</div>
+				
+			</form>
+			
+		</div>
+		<script type="text/javascript"> 
+			function execute() { 
+    			$.get("config.php"); 
+    			return false; 
+			} 
+		</script>
+		
+		<script src="js/bootstrap.min.js"></script>
+
+	</body>
+
+</html>
