@@ -44,7 +44,7 @@
 			<h3>Automated AEM Environment creator</h3>
 			<h4>Select the required tools to install and click proceed...</h4>
 			
-			<form method="">
+			<form>
 				<div class="row">
 					<div class="form-group col-md-1">
 					</div>
@@ -121,14 +121,15 @@
 						<a class="btn btn-primary" href="http://test2.com/" role="button">Cancel</a>
 					</div>
 					<div class="form-group col-md-1">
-						<button href="#" class="btn btn-default btn-success" onclick="execute();" type="submit" value="submit">Submit</button>
+						<button action="#" method="post" class="btn btn-default btn-success" onclick="execute();" type="submit" value="submit">Submit</button>
 						
 					</div>
 				</div>
 			</form>
+		
 		<script type="text/javascript">
 			function execute() {
-    			$.get("/scriptexec.php");
+    			$.get("scriptexec.php");
     			return false;
 			}
 		</script>
