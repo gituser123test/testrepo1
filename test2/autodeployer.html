@@ -121,7 +121,7 @@
 						<a class="btn btn-primary" href="http://test2.com/" role="button">Cancel</a>
 					</div>
 					<div class="form-group col-md-1">
-						<button href="#" class="btn btn-default btn-success" onclick="execute();">Submit</button>
+						<a class="btn btn-default btn-success" onclick="execute();">Submit</a>
 						
 					</div>
 				</div>
@@ -129,10 +129,12 @@
 
 
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
 		<script type="text/javascript">
 			function execute() {
-    			$.get("scriptexec.php");
-    			return false;
+			$.get("scriptexec.php");
+			return false;
 			}
 		</script>
 
